@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles here */
+.btn-outline {
+  @apply inline-block rounded-full border-2 border-accent-dark bg-transparent 
+  px-8 py-2 text-fluid-base text-accent-dark transition duration-200 ease-in-out hover:bg-accent-dark hover:text-white;
+}
+
+.btn-outline-sm {
+  @apply inline-block rounded-full border-2 border-white bg-transparent px-7 
+  py-2 text-fluid-base text-white transition duration-200 ease-in-out hover:border-secondary hover:text-secondary;
+}
+
+.btn-fill {
+  @apply inline-block rounded-md border-0 bg-accent-normal lg:px-14 lg:py-4 text-fluid-base text-white 
+  font-bold hover:-translate-y-1 transition duration-300 ease-in-out px-8 py-3 md:px-10 md:py-3 shadow-lg 
+  shadow-accent-normal/25 md:shadow-xl md:shadow-accent-normal/35 lg:shadow-2xl lg:shadow-accent-normal/50;
+}
+
+.card {
+  @apply pt-14 pb-10 px-16 border border-slate-300 rounded-lg hover:border-accent-normal transition-all duration-200 ease-in-out;
+}
+
+.card:hover .btn-outline {
+  @apply bg-accent-dark text-white;
+}
+
+.card-testimonial {
+  @apply max-w-[440px] min-h-[230px] h-full border border-slate-300 p-5 rounded-lg transition-all duration-200 ease-in-out;
+}
+
+.card-testimonial:hover {
+  @apply border-accent-normal shadow-card shadow-secondary/10;
+}
